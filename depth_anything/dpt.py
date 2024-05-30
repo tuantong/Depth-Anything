@@ -166,9 +166,9 @@ class DPT_DINOv2(nn.Module):
         return depth.squeeze(1)
 
 
-# class DepthAnything(DPT_DINOv2, PyTorchModelHubMixin):
-#     def __init__(self, config):
-#         super().__init__(**config)
+class DepthAnything(DPT_DINOv2):
+    def __init__(self, config):
+        super().__init__(**config)
 
 
 if __name__ == '__main__':
